@@ -220,7 +220,7 @@ pre {
 
 code {
 	padding: 3px;
-	background: #ECF0F1;
+	background: #e2e5e7;
 	color: #707273;
 	border-radius: 3px;
 }
@@ -287,27 +287,27 @@ img.pull-left {
 /* Style Placeholder Text  
 --------------------------------------------------------------------- */
 ::-webkit-input-placeholder {
-	color: #12151B;
+	color: #e2e5e7;
 }
 
 :-moz-placeholder {
 
 	/* Firefox 18- */
-	color: #12151B;
+	color: #e2e5e7;
 }
 
 ::-moz-placeholder {
 
 	/* Firefox 19+ */
-	color: #12151B;
+	color: #e2e5e7;
 }
 
 :-ms-input-placeholder {
-	color: #12151B;
+	color: #e2e5e7;
 }
 
 .placeholder {
-	color: #12151B !important;
+	color: #e2e5e7 !important;
 }
 
 /* block grids default paddings 
@@ -503,7 +503,7 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
 	color: #FFFFFF;
-	background: #37756a;
+	background: #3f885c;
 }
 
 label,
@@ -1259,7 +1259,7 @@ ul#nav li.current a:after {
 	height: 54px;
 	width: 200px;
 	border-radius: 3px;
-	background: #37756a;
+	background: #eacc18;
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
 	color: #FFFFFF;
 	-moz-transition: all 0.4s ease-on-out;
@@ -1270,7 +1270,7 @@ ul#nav li.current a:after {
 }
 
 #hero #more a:hover {
-	background: #00dbbb;
+	background: #3f885c;
 	color: #000000;
 }
 
@@ -1655,7 +1655,7 @@ ul#nav li.current a:after {
 /* =================================================================== */
 
 #services {
-	background: #12151B;
+	background: #e2e5e7;
 	padding-top: 120px;
 	padding-bottom: 120px;
 	border-bottom: 1px solid #15191d;
@@ -1691,7 +1691,15 @@ ul#nav li.current a:after {
 
 #services .service-list h3 {
 	font: 18px/36px "raleway-heavy", sans-serif;
-	color: #00dbbb;
+	color: #575859;
+	padding: 0;
+	text-transform: none;
+	text-align: left;
+	margin-bottom: 6px;
+}
+#services h1 {
+	font: 18px/36px "raleway-heavy", sans-serif;
+	color: #575859;
 	padding: 0;
 	text-transform: none;
 	text-align: left;
@@ -1948,7 +1956,7 @@ ul#nav li.current a:after {
 }
 
 #call-to-action h2 span {
-	color: #37756a;
+	color: #3f885c;
 }
 
 #call-to-action .action a {
@@ -1961,7 +1969,7 @@ ul#nav li.current a:after {
 	padding: 0 30px;
 	max-width: 400px;
 	width: 100%;
-	background: #37756a;
+	background: #3f885c;
 	border-radius: 3px;
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
 	margin: 24px auto 0;
@@ -2017,7 +2025,7 @@ ul#nav li.current a:after {
 /* =================================================================== */
 
 #testimonials {
-	background: #37756a;
+	background: #3f885c;
 	padding-top: 90px;
 	padding-bottom: 112px;
 	position: relative;
@@ -2176,12 +2184,234 @@ ul#nav li.current a:after {
 
 }
 
+
+
+/* ===================================================================
+ * 15. pricing - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+ #pricing {
+	background: #e2e5e7;
+	padding-top: 12rem;
+	padding-bottom: 9.6rem;
+}
+
+
+.pricing-content {
+	margin-top: 3rem;
+	max-width: 1080px;
+}
+
+.pricing-content .bgrid {
+	margin-bottom: 3.9rem;
+	padding: 0 20px;
+}
+
+.pricing-content .price-block {
+	background-color: #FFFFFF;
+	text-align: center;
+	padding: 6rem 0 4.8rem;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+
+.pricing-content .price-block .bottom-part {
+	padding-top: 2.4rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
+.pricing-content .price-block .plan-title {
+	padding-bottom: 2.4rem;
+	font-size: 2.4rem;
+	font-family: "roboto-bold";
+	position: relative;
+}
+
+.pricing-content .price-block .plan-title::after {
+	display: block;
+	background-color: rgba(0, 24, 53, 0.3);
+	width: 80px;
+	height: 3px;
+	content: '\0020';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -40px;
+}
+
+.pricing-content .price-block .plan-price {
+	font-family: "domine-bold", serif;
+	color: #001835;
+	font-size: 6.5rem;
+	line-height: 1;
+	margin-top: 4.2rem;
+	margin-bottom: 0;
+}
+
+.pricing-content .price-block .plan-price sup {
+	font-family: "roboto-black", sans-serif;
+	font-size: 2.4rem;
+	top: -3rem;
+	margin-right: 3px;
+}
+
+
+.pricing-content .price-block .features {
+	list-style: none;
+	font-family: "roboto-regular", sans-serif;
+	font-size: 1.6rem;
+	color: rgba(0, 0, 0, 0.5);
+	margin: 0 0 4.2rem 0;
+}
+
+.pricing-content .price-block .features li {
+	padding: .6rem 0;
+	border-bottom: 1px solid rgba(63, 80, 96, 0.15);
+}
+
+.pricing-content .price-block .features li strong {
+	font-family: "roboto-black", serif;
+	color: #000000;
+	margin-right: 5px;
+}
+
+.pricing-content .price-block .features li:last-child {
+	border: none;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * pricing 
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width:1024px) {
+	.pricing-content {
+		max-width: 650px;
+	}
+
+	.pricing-content .bgrid {
+		padding: 0;
+		width: 50%;
+		clear: none;
+	}
+
+	.pricing-content .bgrid:nth-child(2n+1) {
+		clear: both;
+	}
+
+	.pricing-content .bgrid:last-child {
+		clear: both;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+@media only screen and (max-width:600px) {
+	.pricing-content {
+		max-width: 400px;
+	}
+
+	.pricing-content .bgrid {
+		width: 100% !important;
+		float: none !important;
+		clear: both !important;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+}
+
+
+
+/* ===================================================================
+ * 08. common and reusable styles (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+ .section-intro {
+	max-width: 840px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.section-intro h2 {
+	font-family: "domine-bold", serif;
+	font-size: 4.8rem;
+	line-height: 1.25;
+	margin-bottom: 1.2rem;
+}
+
+.section-intro h5 {
+	color: #ed254d;
+	font-size: 1.6rem;
+	line-height: 1.875;
+	margin-bottom: 0.3rem;
+	letter-spacing: .4rem;
+}
+
+.section-intro .with-bottom-line {
+	position: relative;
+	margin-bottom: 4.2rem;
+	padding-bottom: 1.5rem;
+}
+
+.section-intro .with-bottom-line::after {
+	display: block;
+	background-color: #00dbbb;
+	width: 120px;
+	height: 3px;
+	content: '\0020';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -60px;
+}
+
+.js .animate-this,
+.js .animate-intro {
+	opacity: 0;
+}
+
+.oldie .animate-this,
+.oldie .animate-intro
+.no-cssanimations .animate-this,
+.no-cssanimations .animate-intro {
+	opacity: 1;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * common styles
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width:768px) {
+	.section-intro {
+		max-width: 650px;
+	}
+
+	.section-intro h2 {
+		font-size: 4rem;
+	}
+}
+@media only screen and (max-width:600px) {
+	.section-intro h2 {
+		font-size: 3.3rem;
+	}
+}
+@media only screen and (max-width:400px) {
+	.section-intro h2 {
+		font-size: 3rem;
+	}
+}
+
+
 /** 
 /* 12. =contact
 /* =================================================================== */
 
 #contact {
-	background: #12151B;
+	background: #111417;
 	padding-top: 120px;
 	padding-bottom: 138px;
 	overflow: hidden;
@@ -2281,7 +2511,7 @@ ul#nav li.current a:after {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	padding: 0 20px;
-	color: #37756a;
+	color: #3f885c;
 }
 
 input[type="text"],
@@ -2315,7 +2545,7 @@ input[type="email"],
 }
 
 #message-warning {
-	color: #37756a;
+	color: #3f885c;
 }
 
 #message-success {
@@ -2589,7 +2819,7 @@ footer .social-links li:first-child {
 	height: 54px;
 	width: 200px;
 	margin-left: -100px;
-	background: #37756a;
+	background: #3f885c;
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
 	color: #FFFFFF;
 	text-align: center;
@@ -2613,5 +2843,5 @@ footer .social-links li:first-child {
 	margin-left: 6px;
 	position: relative;
 	right: -5px;
-}
 
+}
