@@ -774,6 +774,13 @@
    <script src="js/jquery.placeholder.min.js"></script>
    <script src="js/jquery.magnific-popup.min.js"></script>  
    <script src="js/main.js"></script>
+   <script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#contactForm').on('submit', function(e) {
+		$('#contactForm *').fadeOut(2000);
+		$('#contactForm').prepend('Your message was sent, thank you!');
+		});
+</script>
 
 
 </body>

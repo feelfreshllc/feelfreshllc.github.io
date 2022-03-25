@@ -217,11 +217,12 @@
 	/*----------------------------------------------------*/
 	/*	contact form
 	------------------------------------------------------*/
-	var submitted=false;
-	$('#contactForm').on('submit', function(e) {
-		$('#contactForm *').fadeOut(2000);
-		$('#contactForm').prepend('Your message was sent, thank you!');
-		});
+
 	
+	
+
+
+
+
 
 })(jQuery);
